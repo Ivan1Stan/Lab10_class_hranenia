@@ -21,6 +21,9 @@ static bilet* temp;
 int kol_biletov = 0;
 extern void enter()
 {
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	register int a;
 	printf("Кол-во объектов в массиве: ");
 	while (!scanf_s("%d", &kol_biletov) || kol_biletov < 0)                       //Проверка на ввод
